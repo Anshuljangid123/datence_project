@@ -21,7 +21,7 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 const { connectDB } = require("./config/db");
-const { bookRouter } = require("../routes/bookRoutes");
+const { bookRouter } = require("./routes/bookRoutes");
 
 const app = express();
 

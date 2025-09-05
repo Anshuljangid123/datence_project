@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const { bookModel } = require("../src/dbSchema");
-const { scrapeBooks } = require("../../scraper/scraper");
+const { bookModel } = require("../dbSchema");
+const { scrapeBooks } = require("../scraper/scraper");
 
 
 // GET /api/books
