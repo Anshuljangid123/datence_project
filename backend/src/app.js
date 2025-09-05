@@ -21,7 +21,7 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 const { connectDB } = require("./config/db");
-const { bookRouter } = require("../routes/bookRoutes"); // make sure path is correct!
+const { bookRouter } = require("../routes/bookRoutes");
 
 const app = express();
 
@@ -35,4 +35,6 @@ connectDB();
 // Routes
 app.use("/api/books", bookRouter);
 
+// Export app for Vercel
 module.exports = app;
+
